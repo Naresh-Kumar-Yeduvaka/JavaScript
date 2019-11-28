@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Welcome To Media3</title>
+</head>
+<style type="text/css">
+	span{
+		font-size: 30px;
+		font-family: serif;
+		color: blue;
+		width: 30%;
+		margin-left: 15%;
+		}
+	body{
+		background-color:#7FFFD4;
+		margin: 30px 30px;
+	}
+	h1{
+		font-family: all;
+		font-size: 50px;
+		text-align: center;
+		margin-top: 7%;
+		color: #DC143C;
+	}
+	
+	p{
+		font-size: 35px;
+		color: #00008B;
+	}
+
+
+</style>
+<body>
+
+<span>Home</span>
+<input type="button" name="" id=1 onclick="kumar(this.id)">
+<span>Services</span>
+<input type="button" name="" id=2 onclick="kumar(this.id)">
+<span>AboutUs</span>
+<input type="button" name="" id=3 onclick="kumar(this.id)">
+<span>ContactUs</span>
+<input type="button" name="" id=4 onclick="kumar(this.id)">
+<div id="n1">	
+<h1>This is Home Tab</h1>
+</div>
+<div id="n2">	
+<h1>This is Services</h1>
+<p>Our teams are experts in Logo & Branding Development. We help our clients understand that strong brand identity and logo design are crucial to any business or organization.
+Customer service and client experience is also a part of a brand. The idea of reputation is a critical part of defining the word brand.</p>
+</div>
+<div id="n3">	
+<h1>This is AboutUs Tab</h1>
+<p>
+	Media3 is one of the best website & mobile app design - development company in Visakhapatnam. Our prime services are Corporate Websites, eCommerce Stores, CMS systems, Payment Gateway Implementations, Custom Web Applications, iOS mobile apps, Android Mobile apps and All different graphic design services including professional logo design and branding services. We offer our services in Visakhapatnam, Kakinada, Rajamundry, Vijayawada, Nellore, Tirupathi, Hyderabad and Bubhaneswar.
+</p>
+</div>
+<div id="n4">	
+<h1>This is ContactUs Tab</h1>
+</div>
+<script type="text/javascript">
+	function kumar(nare){
+		var x= nare;
+		if(x==1){
+			 document.getElementById("n1").style.display="block";
+			 document.getElementById("n2").style.display="none";
+			 document.getElementById("n3").style.display="none";
+			 document.getElementById("n4").style.display="none";
+			
+		}
+				else if(x==2) {
+			 document.getElementById("n1").style.display="none";
+			 document.getElementById("n2").style.display="block";
+			 document.getElementById("n3").style.display="none";
+			 document.getElementById("n4").style.display="none";
+			}
+				else if(x==3) {
+			 document.getElementById("n1").style.display="none";
+			 document.getElementById("n2").style.display="none";
+			 document.getElementById("n3").style.display="block";
+			 document.getElementById("n4").style.display="none";
+			}	else if(x==4) {
+			 document.getElementById("n1").style.display="none";
+			 document.getElementById("n2").style.display="none";
+			 document.getElementById("n3").style.display="none";
+			 document.getElementById("n4").style.display="block";
+			}
+	}
+</script>
+</body>
+</html>
